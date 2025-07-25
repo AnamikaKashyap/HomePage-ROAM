@@ -56,6 +56,8 @@ html {
 }
 
 .sidebar .nav-link.active {
+    position: relative;
+  background-color: #FFCB4B;
     width: 178px;
     height: 44px;
     opacity: 1;
@@ -73,6 +75,32 @@ html {
     letter-spacing: 2%;
     color: #4B67A8;
 }
+
+.sidebar .nav-link.active::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -11px;
+  width: 6px;            /* thickness of the line */
+  height: 44px;
+  background-color: #4B67A8; /* contrast color */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-radius: 10px;
+}
+/* .active-indicator {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #4B67A8;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.sidebar .nav-link.active {
+  position: relative;
+} */
 
 .nav-list {
     list-style: none;
@@ -337,6 +365,10 @@ html {
     height: 266px;
 }
 
+.card {
+    border: none;
+}
+
 .card-body {
     font-family: Poppins;
     font-weight: 600;
@@ -432,6 +464,7 @@ html {
     flex-wrap: wrap;
     width: 100%;
     gap: 30.92px;
+    justify-content: center;
 }
 
 .rounded-circle-img {

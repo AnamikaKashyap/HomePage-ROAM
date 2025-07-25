@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Roam Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <button class="sidebar-toggle d-md-none" id="toggleSidebar">☰</button>
+
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar" id="sidebar">
+            <div class="text-center py-3">
+                <img src="./imageAssets/roamLogo.svg" alt="Roam Logo" class="img-fluid" />
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">
+                        <img src="./imageAssets/home.svg" alt="homeImage" />
+                        Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="./imageAssets/booking.svg" alt="homeImage" />
+                        Bookings</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <img src="./imageAssets/request.svg" alt="homeImage" />
+                        Requests</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main content -->
+        <main class="flex-grow-1 main-content">
+            <div class="topbar">
+                <span><i class="bi bi-geo-alt-fill"></i>
+                    <img src="./imageAssets/location.svg" />
+                    <p class="hidden-txt">278 Hidden Lake Way, Santa Rosa Beach, FL</p>
+                </span>
+                <div class="dropdown position-relative">
+                    <img src="./imageAssets/profile.svg" />
+                    <button class="three-dots-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="dropdown-list-item"><img src="./imageAssets/profilesetting.svg" /><a
+                                class="dropdown-item" href="#">Profile Settings</a></li>
+                        <li class="dropdown-list-item"><img src="./imageAssets/aboutRam.svg" /><a class="dropdown-item"
+                                href="#">About ROAM</a></li>
+                        <li class="dropdown-list-item"><img src="./imageAssets/locationon.svg" /><a
+                                class="dropdown-item" href="#">Manage Address</a></li>
+                        <li class="dropdown-list-item"><img src="./imageAssets/payment.svg" /><a class="dropdown-item"
+                                href="#">Payment Method</a></li>
+                        <li class="dropdown-list-item"><img src="./imageAssets/transactions.svg" /><a
+                                class="dropdown-item" href="#">Transactions</a></li>
+                        <li class="dropdown-list-item"><img src="./imageAssets/subscriptions.svg" /><a
+                                class="dropdown-item" href="#">Subscriptions</a></li>
+                        <li class="dropdown-list-item"><img src="./imageAssets/faq.svg" /><a class="dropdown-item"
+                                href="#">FAQ</a></li>
+                        <li class="dropdown-list-item"><img src="./imageAssets/contact.svg" /><a class="dropdown-item"
+                                href="#">Contact Us</a></li>
+                        <li class="dropdown-list-item"><img src="./imageAssets/terms.svg" /><a class="dropdown-item"
+                                href="#">Terms and Conditions</a></li>
+                        <li class="dropdown-list-item"><img src="./imageAssets/privacy.svg" /><a class="dropdown-item"
+                                href="#">Privacy Policy</a></li>
+                        <li class="dropdown-list-item"><img src="./imageAssets/logout.svg" /><a
+                                class="dropdown-item text-danger" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Hero Images -->
+            <div class="hero-slider">
+                <div class="hero-track">
+                    <div class="hero-inner" id="heroTrack">
+                        <img src="./imageAssets/Rectangle.svg" alt="Image 1" />
+                        <img src="./imageAssets/rectangle2.svg" alt="Image 2" />
+                        <img src="./imageAssets/beach.svg" alt="Image 3" />
+
+                    </div>
+
+                    <div class="dots-hero-container">
+                        <span class="dot-hero active"></span>
+                        <span class="dot-hero"></span>
+                        <span class="dot-hero"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Category Buttons -->
+            <div class="category-buttons-down text-center py-3 px-2">
+                <button class="btn btn-category">Beauty</button>
+                <button class="btn btn-category">Fitness</button>
+                <button class="btn btn-category">Wellness</button>
+                <button class="btn btn-category">Events</button>
+                <button class="btn btn-category">Food</button>
+                <button class="btn btn-category">Adventure</button>
+            </div>
+
+            <!-- Popular Services -->
+            <section class="px-3">
+                <h5 class="popularservices">Popular Services</h5>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <div class="card service-card">
+                            <img src="./imageAssets/yoga.svg" class="card-img-top" alt="Yoga" />
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card service-card">
+                            <img src="./imageAssets/beach.svg" class="card-img-top" alt="Beach" />
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Popular Experiences -->
+            <section class="px-3 mt-4">
+                <h5 class="popularexp">Popular Experiences</h5>
+                <div class="row g-3">
+                    <div class="col-12 col-md-6">
+                        <div class="card experience-card p-3">
+                            <img src="./imageAssets/girl.svg" class="card-img-top" alt="Beach" />
+                            <div class="card-body">Beach Training with Ice Bath Plunge</div>
+                            <p class="card-text">Experience nature’s gym and finish it off with an ice bath at the
+                                beach!</p>
+                                <p class="white-text">The ultimate Myers Cocktail with two energy boosting add-ons to maximize your experience.</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="card experience-card p-3">
+                            <img src="./imageAssets/exercise.svg" class="card-img-top" alt="Beach" />
+                            <div class="card-body">Sunrise Yoga & Cold Water Dip</div>
+                            <p class="card-text">Start your day with energizing yoga and awaken your senses with a
+                                refreshing ocean plunge!</p>
+                                <p class="white-text">The ultimate Myers Cocktail with two energy boosting add-ons to maximize your experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Top Providers -->
+            <section class="px-3 mt-4 mb-5">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div class="top-provider">Top Providers Near You</div>
+                    <button class="viewall">View All</button>
+                </div>
+                <div class="row row-cols-2 row-cols-sm-3 row-cols-md-4 g-3">
+                    <div class="column-provider">
+                        <div class="card provider-card text-center p-2">
+                            <img src="./imageAssets/olivia.svg" class="rounded-circle-img" alt="Olivia" />
+                            <div class="provider-name">
+                                <p class="p-name">Olivia</p>
+                                <p class="p-info">More Info <img src="./imageAssets/Vectorexpand.svg" /></p>
+                            </div>
+                            <p class="yoga-inst">Yoga Instructor</p>
+                            <small class="location-text">
+                                <div class="location-item">
+                                    <p><img src="./imageAssets/locationprovider.svg" class="locprovider" /> 7.2 miles
+                                        away</p>
+                                    <p><img src="./imageAssets/VectorStar.svg" />0(0)</p>
+                                </div>
+                            </small>
+                        </div>
+                        <div class="card provider-card text-center p-2">
+                            <img src="./imageAssets/anika.svg" class="rounded-circle-img" alt="Olivia" />
+                            <div class="provider-name">
+                                <p class="p-name">Anika Bator</p>
+                                <p class="p-info">More Info <img src="./imageAssets/Vectorexpand.svg" /></p>
+                            </div>
+                            <p class="yoga-inst">Yoga Instructor</p>
+                            <small class="location-text">
+                                <div class="location-item">
+                                    <p><img src="./imageAssets/locationprovider.svg" class="locprovider" /> 7.2 miles
+                                        away</p>
+                                    <p><img src="./imageAssets/VectorStar.svg" />0(0)</p>
+                                </div>
+                            </small>
+                        </div>
+                        <div class="card provider-card text-center p-2">
+                            <img src="./imageAssets/omar.svg" class="rounded-circle-img" alt="Olivia" />
+                            <div class="provider-name">
+                                <p class="p-name">Omar Philips</p>
+                                <p class="p-info">More Info <img src="./imageAssets/Vectorexpand.svg" /></p>
+                            </div>
+                            <p class="yoga-inst">Yoga Instructor</p>
+                            <small class="location-text">
+                                <div class="location-item">
+                                    <p><img src="./imageAssets/locationprovider.svg" class="locprovider" /> 7.2 miles
+                                        away</p>
+                                    <p><img src="./imageAssets/VectorStar.svg" />0(0)</p>
+                                </div>
+                            </small>
+                        </div>
+                        <div class="card provider-card text-center p-2">
+                            <img src="./imageAssets/mira.svg" class="rounded-circle-img" alt="Olivia" />
+                            <div class="provider-name">
+                                <p class="p-name">Mira Donin</p>
+                                <p class="p-info">More Info <img src="./imageAssets/Vectorexpand.svg" /></p>
+                            </div>
+                            <p class="yoga-inst">Yoga Instructor</p>
+                            <small class="location-text">
+                                <div class="location-item">
+                                    <p><img src="./imageAssets/locationprovider.svg" class="locprovider" /> 7.2 miles
+                                        away</p>
+                                    <p><img src="./imageAssets/VectorStar.svg" />0(0)</p>
+                                </div>
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js">
+
+    </script>
+</body>
+
+</html>
